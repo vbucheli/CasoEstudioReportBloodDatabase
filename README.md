@@ -1,32 +1,64 @@
-# Caso de Estudio Report-BloodDatabase
+# Report-BloodDatabase
 
-  Proyecto: Report-BloodDatabase (Adaptado)
-    Curso: Fundamentos de Programación Orientada a Objetos (FPOO)
-    Universidad del Valle
+Este proyecto es una adaptación del sistema de gestión de donantes de sangre de la Cruz Roja, desarrollado como parte del curso **Fundamentos de Programación Orientada a Objetos (FPOO)** en la **Universidad del Valle**.
 
-    Este es un proyecto del curso FPOO de la Universidad del Valle, 
-    desarrollado con fines académicos. Puede ser utilizado con fines 
-    académicos dando los créditos de la autoría.
+## Descripción del Proyecto
 
-Los requerimientos resueltos en este proyecto son
+El objetivo de este proyecto es implementar un módulo de reportes, estadísticas e indicadores basado en la información de donantes de sangre. Los datos manejados incluyen el tipo de sangre, la procedencia y la edad de las personas. Este proyecto tiene fines académicos y puede ser utilizado en el ámbito educativo, siempre y cuando se respeten los créditos de la autoría.
 
-A partir del estudio de caso sobre el Sistema de Gestión de Donantes de Sangre de la Cruz Roja, se solicita crear un módulo de reportes, estadísticas e indicadores. El problema es adaptado y modificado de [1] y se solicita que el dicho módulo sea accesible desde el menú principal. En el sistema se conoce la siguiente información de las personas: el tipo de sangre, procedencia y edad.
+Este sistema fue adaptado y modificado de fuentes externas [1], y el módulo de reportes es accesible desde el menú principal del sistema.
 
-El tipo de sangre y la procedencia se manejan de acuerdo a las siguientes convenciones:
-Tipo de sangre: A+, A-, B+, B-, AB+, AB-, O+, O-
-Procedencia:
-    Putumayo
-    Cauca
-    Valle del Cauca
-    Amazonas
-    Risaralda
-    Antioquia
-    Norte de Santander
-    Chocó
-    Arauca
-    Guainía
-El reporte debe contener:
-1. Determinar el total de personas en el sistema.
-2. Determinar el número de chocoanos con tipo de sangre A+, araucanos con tipo de sangre O- y caucanos con tipo de sangre A+.
-3. Determinar la edad promedio de los individuos de Choco, Arauca y Valle del Cauca.
-4. Determinar la cantidad de vallecaucanos con tipo de sangre B+ y mayores de edad.
+## Funcionalidades del Módulo de Reportes
+
+El módulo de reportes permite realizar las siguientes consultas y estadísticas:
+
+1. **Total de personas en el sistema**: El reporte muestra cuántos donantes se encuentran registrados.
+2. **Número de personas por tipo de sangre y procedencia**:
+    - Número de donantes de Chocó con tipo de sangre A+.
+    - Número de donantes de Arauca con tipo de sangre O-.
+    - Número de donantes de Cauca con tipo de sangre A+.
+3. **Edad promedio de los donantes**: Se calcula la edad promedio de los donantes provenientes de Chocó, Arauca y Valle del Cauca.
+4. **Cantidad de adultos con sangre B+ en el Valle del Cauca**: Se determina cuántos donantes del Valle del Cauca son mayores de edad y tienen tipo de sangre B+.
+
+## Información de Donantes
+
+En el sistema, los donantes están clasificados según la siguiente información:
+
+- **Tipo de sangre**: A+, A-, B+, B-, AB+, AB-, O+, O-
+- **Procedencia**: 
+    - Putumayo
+    - Cauca
+    - Valle del Cauca
+    - Amazonas
+    - Risaralda
+    - Antioquia
+    - Norte de Santander
+    - Chocó
+    - Arauca
+    - Guainía
+
+## Requerimientos del Proyecto
+
+El proyecto resuelve los siguientes requerimientos relacionados con la gestión y reporte de donantes:
+- Implementación de consultas para generar estadísticas personalizadas basadas en el tipo de sangre, procedencia y edad de los donantes.
+- Desarrollo de un módulo que permita realizar estas consultas de manera eficiente y accesible desde el menú principal.
+
+## Instalación
+
+1. Clona este repositorio: 
+   ```bash
+   git clone https://github.com/tu_usuario/Report-BloodDatabase.git
+2. Compila el proyecto utilizando CMake:
+  ```bash
+  mkdir build
+  cd build
+  cmake ..
+  make
+
+3. Ejecuta el programa desde el directorio de compilación.
+
+## Uso
+Accede al módulo de reportes desde el menú principal del sistema. Desde ahí, podrás realizar las consultas descritas anteriormente y obtener las estadísticas solicitadas.
+
+## Créditos
+Este es un proyecto desarrollado por Victor Bucheli para el curso FPOO en la Universidad del Valle. El código fue traducido y adaptado a las necesidades del curso basándose en el proyecto original BloodDatabase.
