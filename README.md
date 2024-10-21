@@ -49,12 +49,12 @@ El proyecto resuelve los siguientes requerimientos relacionados con la gestión 
    ```bash
    git clone https://github.com/tu_usuario/Report-BloodDatabase.git
 2. Compila el proyecto utilizando CMake:
-  ```bash
-  mkdir build
-  cd build
-  cmake ..
-  make
-
+   ```bash
+   mkdir build
+   cd build
+   cmake ..
+   make
+   
 3. Ejecuta el programa desde el directorio de compilación.
 
 ## Uso
